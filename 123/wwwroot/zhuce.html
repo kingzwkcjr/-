@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="小周同学">
+    <title>注册</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
+    <style>
+
+        .fa-plus-circle{
+            /*line-height: 40px;*/
+
+            font-size: 20px;
+        }
+        .fa-angle-left{
+            line-height: 20px;
+            font-size: 30px;
+        }
+        .col-lg-10{
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+            line-height: 45px;
+        }
+        form{
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+
+        input{
+            margin-bottom: 20px !important;
+        }
+        button{
+            margin-top: 20px;
+            width: 100%;
+        }
+    </style>
+    <script src="myjs/jquery.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-1 col-sm-1 col-md-1 col-xs-1">
+
+                            <a class="navbar-brand" href="index.html"><span class="fa fa-angle-left"></span></a>
+                        </div>
+
+                    <div class="col-lg-10 col-sm-10 col-md-10 col-xs-10">
+                        注册
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <form role="form" method="post">
+            <div class="form-group">
+
+                <input type="text" name="username" class="form-control" placeholder="请填写昵称">
+                <input type="password" name="password" class="form-control" placeholder="请填写密码">
+                <input type="password" class="form-control" placeholder="请再次输入密码">
+                <input type="radio" name="sex" id="man"/> <label for="man">先生</label><br/>
+                <input type="radio" name="sex" id="woman"/> <label for="woman">女士</label>
+                <input type="email" name="email" class="form-control" placeholder="请输入电子邮箱地址">
+                <select class="form-control">
+                    <option value="HTML5">HTML5</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="CSS">CSS</option>
+                    <option value="jQuery">jQuery</option>
+                    <option value="node.js">node.js</option>
+                </select>
+
+                <button type="submit" class="btn btn-success">注册</button>
+
+            </div>
+        </form>
+
+    </main>
+     <!--模态框（Modal）-->
+    <div class="modal fade" id="success" tabindex="-1" role="dialog" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">注册提示</h4>
+                </div>
+                <div class="modal-body">您已成功注册，点击确定进入登录</div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-primary" id="sure">确定</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+    <div class="modal fade" id="false" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                        <h4 class="modal-title">注册提示</h4>
+                    </div>
+                    <div class="modal-body"> 您的两次密码输入不一致，请重新输入 </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+    <script src="myjs/zhuce.js"></script>
+</body>
+</html>
